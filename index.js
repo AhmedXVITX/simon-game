@@ -34,7 +34,7 @@ function checkGameCondition()
         $("body").addClass("game-over");
         setTimeout( function(){$("body").removeClass("game-over")},200);
         $("h1").text("Game Over, Press Any Key to Restart");
-        hiScore=currLvl;
+        hiScore=currLvl-1;
         $("h3").text("Hi score:"+ hiScore);
         var audio = new Audio('./sounds/wrong.mp3');
                audio.play();
