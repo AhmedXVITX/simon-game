@@ -9,6 +9,12 @@ h1{
   margin:  5%;
   color: #FEF2BF;
 }
+h3{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+    margin:  5%;
+    color: #FEF2BF;
+}
 .btn{
     height: 200px;
     width:200px;

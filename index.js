@@ -29,11 +29,13 @@ function checkGameCondition()
         }
         $("h1").text("Level "+currLvl);
     }
-    else if(gameCondition==0)
+    else 
     {
         $("body").addClass("game-over");
         setTimeout( function(){$("body").removeClass("game-over")},200);
         $("h1").text("Game Over, Press Any Key to Restart");
+        hiScore=currLvl;
+        $("h3").text("Hi score:"+ hiScore);
         var audio = new Audio('./sounds/wrong.mp3');
                audio.play();
         currLvl=0;
@@ -127,6 +129,7 @@ var colorsToPick=[];
 var colorToPick;
 var gameCondition;
 var colorsPicked=[];
+var hiScore=0;
 let j;
 
 
